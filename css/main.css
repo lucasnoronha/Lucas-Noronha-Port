@@ -13,6 +13,12 @@ label {
   text-align-last: center;
 }
 
+.p-left {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  text-align-last: left;
+}
+
 div {
   user-select: none;
 }
@@ -79,6 +85,7 @@ div {
 }
 
 @media screen and (min-width: 320px) {
+
   .ln-page-wrapper,
   .ln-preloader {
     width: 100%;
@@ -449,14 +456,21 @@ div {
     height: 700px;
     display: block;
     list-style: none;
-    margin-top: calc(26vh - 75px);
   }
 
   .ln-slider-item {
     display: block;
     height: 500px;
     float: left;
+    margin-top: calc(26vh - 75px);
   }
+
+.ln-portfolio-item-info {
+  width: 100%;
+  display: table;
+  margin-top: 55px;
+}
+
 }
 
 @media screen and (min-width: 576px) {
@@ -581,13 +595,23 @@ div {
 
 /* UTILIDADE */
 
-.ln-title {
+.ln-title-center {
   font-family: "Abril Fatface", serif;
   font-weight: normal;
   text-align: center;
 }
 
-.ln-title-big {
+.ln-title-left {
+  font-family: "Abril Fatface", serif;
+  font-weight: normal;
+  text-align: left;
+}
+
+.ln-title-large {
+  font-size: 64px;
+}
+
+.ln-title-xlarge {
   font-size: 120px;
 }
 
@@ -655,6 +679,39 @@ div {
   padding-left: 15px;
 }
 
+
+.ln-mar-30 {
+  margin: 30px;
+}
+.ln-mar-top-30 {
+  margin-top: 30px;
+}
+.ln-mar-right-30 {
+  margin-right: 30px;
+}
+.ln-mar-bottom-30 {
+  margin-bottom: 30px;
+}
+.ln-mar-left-30 {
+  margin-left: 30px;
+}
+
+.ln-pad-30 {
+  padding: 30px;
+}
+.ln-pad-top-30 {
+  padding-top: 30px;
+}
+.ln-pad-right-30 {
+  padding-right: 30px;
+}
+.ln-pad-bottom-30 {
+  padding-bottom: 30px;
+}
+.ln-pad-left-30 {
+  padding-left: 30px;
+}
+
 .ln-full-height {
   height: 100vh;
   position: relative;
@@ -705,3 +762,4 @@ div {
 .blue {
   background: blue;
 }
+
