@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Lucas Noronha - Android / Web</title>
+  </head>
+
+  <body>
+    <div class="ln-preloader">
+      <div class="ln-preloader-inner">
+        <img src="imagens/avatar.svg" class="ln-mar-bottom-15" />
+        <p class="ln-text-light ln-mar-top-15">Aguarde um pouquinho ...</p>
+      </div>
+    </div>
+
+    <div class="ln-overlay ln-toggle-modal"></div>
+
+    <div class="ln-modal ln-bg-black" id="ln-modal-orcamento">
+      <div class="ln-modal-header">
+        <h1 class="ln-title ln-text-green">Solicite um orçamento</h1>
+        <button class="ln-close-modal ln-toggle-modal">X</button>
+      </div>
+      <div class="ln-modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="ln-text-light">
+              Por favor informe os dados abaixo e eu entrarei em contato com
+              você o mais breve possível.
+            </p>
+          </div>
+        </div>
+        <div class="row ln-mar-top-15">
+          <div class="col-sm-12">
+            <form class="ln-form">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 ln-mar-bottom-15">
+                  <label for="Nome" class="ln-text-light">Nome</label>
+                  <input
+                    type="text"
+                    name="Nome"
+                    id="ln-nome"
+                    class="ln-field"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 ln-mar-bottom-15">
+                  <label for="Email" class="ln-text-light">Email</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="ln-email"
+                    class="ln-field"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 ln-mar-bottom-15">
+                  <label for="Telefone" class="ln-text-light">Telefone</label>
+                  <input
+                    type="tel"
+                    name="Telefone"
+                    id="ln-telefone"
+                    class="ln-field"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 ln-mar-bottom-15">
+                  <label for="Site" class="ln-text-light">Site</label>
+                  <input
+                    type="text"
+                    name="Site"
+                    id="ln-site"
+                    class="ln-field"
+                  />
+                </div>
+                <div class="col-ms-12 col-md-12 ln-mar-top-15 ln-mar-bottom-15">
+                  <label for="Mensagem" class="ln-text-light">
+                    Descreva abaixo o projeto na qual você precisa de orçamento:
+                  </label>
+                  <textarea
+                    id="ln-mensagem"
+                    name="Mensagem"
+                    rows="8"
+                    class="ln-textarea"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row justify-content-end ln-mar-bottom-15">
+                <div class="col-sm-12">
+                  <button class="ln-btn ln-btn-large ln-btn-green ln-btn-block">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="ln-topbar">
+      <div class="ln-logo">
+        <img src="imagens/Logo.svg" alt="Logo Lucas Noronha" />
+      </div>
+
+      <nav class="ln-menu">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Sobre</a>
+      </nav>
+    </header>
+
+    <div class="ln-contact-info ln-bg-black ln-text-light">
+      <div class="ln-contact-info-inner">
+        <h2 class="ln-title ln-text-green">Contato</h2>
+        <p>lucas.noronha12@gmail.com</p>
+        <p>+55 (91) 9 9821 5278</p>
+        <div class="ln-social-links">
+          <a href="#" class="ln-social">
+            <img src="imagens/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" class="ln-social">
+            <img src="imagens/icon-linkedin.svg" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+      <div class="ln-corner"></div>
+    </div>
+
+    <button class="ln-btn-contact"></button>
+
+    <div class="ln-page-wrapper">
+      <section class="ln-full-height ln-firt-section" id="ln-home-presentation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 offset-md-4 ln-display-text">
+              <h1 class="ln-title ln-text-green ln-title-big">Olá!</h1>
+              <p class="text-center ln-text-light">
+                Meu nome é <span class="ln-text-green">Lucas Noronha</span>, sou
+                programador <span class="ln-text-green">Android e Web</span>.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                labore nemo rem numquam modi dolorum delectus quia, sint ipsam
+                vero quisquam debitis necessitatibus perspiciatis. Ratione neque
+                hic vero maxime eos.
+              </p>
+              <div class="d-grid gap-2 ln-mar-top-15">
+                <button
+                  class="ln-btn ln-btn-large ln-btn-green ln-toggle-modal"
+                >
+                  solicite um orçamento
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="ln-scroll-down">
+            <div class="ln-arrow-down">
+              <img src="imagens/arrow-down.svg" alt="Role a Pagina" />
+            </div>
+          </div>
+      </section>
+
+      <section class="ln-full-height" id="ln-home-portfolio">
+        <div class="container-fluid ln-no-padding">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="ln-portfolio-navgator">
+                <div class="ln-navgator-counter">
+                  <span class="ln-text-green">01</span>
+                </div>
+                  <nav class="ln-item-navgator">
+                  <a href="#" class="ln-item-active" data-nav="1"></a>
+                  <a href="#" data-nav="2"></a>
+                  <a href="#" data-nav="3"></a>
+                  <a href="#" data-nav="4"></a>
+                  <a href="#" data-nav="5"></a>
+                  </nav>
+                  <div class="ln-items-next-prev ln-no-radius-left">
+                    <div class="ln-item-prev">
+                        <ion-icon name="arrow-dropleft"></ion-icon>
+                    </div>
+
+                    <div class="ln-items-counter">
+                        <span class="ln-current-slide" id="item-contador" >01</span>
+                        /
+                        <span class="ln-total-slide">05</span>
+                    </div>
+
+                    <div class="ln-item-next">
+                        <ion-icon name="arrow-dropright"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="col-sm-10">
+            <div class="ln-slider-container ln-full-height">
+                <ul class="ln-slider-list ln-full-height">
+                  <li class="ln-slider-item red">
+                    
+                  </li>
+                  <li class="ln-slider-item yellow">
+
+                  </li>
+                  <li class="ln-slider-item blue">
+                    
+                  </li>
+                  <li class="ln-slider-item purple">
+                    
+                  </li>
+                  <li class="ln-slider-item green">
+                    
+                  </li>
+                </ul>
+            </div>
+          </div>
+    </div>
+</div>
+</section>
+
+</div>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
