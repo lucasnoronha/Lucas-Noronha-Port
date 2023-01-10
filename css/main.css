@@ -471,6 +471,19 @@ div {
   margin-top: 55px;
 }
 
+.ln-portfolio-item-thumb {
+  width: 100%;
+  background-color: #2c2c2c;
+  display: table;
+  padding: 75px 0;
+}
+
+.ln-portfolio-item-thumb img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  left: -75px;
 }
 
 @media screen and (min-width: 576px) {
