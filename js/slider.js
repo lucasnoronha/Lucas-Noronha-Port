@@ -116,6 +116,8 @@ var setActiveSlide = function () {
     if (mySlideNum === currentCounter) {
       sliderItem[sld].classList.add("ln-slide-active");
       sliderItem[sld].querySelector('.ln-portfolio-item-box').classList.add('ln-scale-right');
+      sliderItem[sld].querySelector('.ln-portfolio-item-thumb img').classList.add('ln-scale-up');
+      sliderItem[sld].querySelector('.ln-portfolio-item-info').classList.add('ln-fade-from-left');
     }
   }
 };
@@ -131,6 +133,9 @@ var changeAvctive = function () {
 
   for (var rms = 0; rms < sliderItem.length; rms++) {
     sliderItem[rms].classList.remove("ln-slide-active");
+    sliderItem[rms].querySelector('.ln-portfolio-item-box').classList.remove('ln-scale-right');
+    sliderItem[rms].querySelector('.ln-portfolio-item-thumb img').classList.remove('ln-scale-up');
+    sliderItem[rms].querySelector('.ln-portfolio-item-info').classList.remove('ln-fade-from-left');
   }
 
   setActiveNav();

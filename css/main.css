@@ -29,6 +29,13 @@ div {
   }
 }
 
+@keyframes fadeFromLeft {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
 @keyframes slideTopIn {
   to {
     top: 15%;
@@ -39,6 +46,12 @@ div {
 @keyframes scaleRight {
   to {
     transform: scaleX(1);
+  }
+}
+
+@keyframes scaleUp {
+  to {
+    transform: scale(1);
   }
 }
 
@@ -195,6 +208,7 @@ div {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 900;
   }
 
   .ln-logo {
@@ -475,13 +489,22 @@ div {
     width: calc(100% - 75px);
     display: table;
     margin-top: 55px;
+    position: relative;
+    opacity: 0;
+    left: -75px;
   }
 
   .ln-portfolio-item-thumb {
     width: 100%;
     display: table;
-    padding: 75px 0;
+    padding: 75px 0 19px 0;
     position: relative;
+  }
+
+  .ln-portfolio-item-thumb > button {
+    margin-top: 17px;
+    margin-right: 75px;
+    float: right;
   }
 
   .ln-portfolio-item-box {
@@ -502,6 +525,7 @@ div {
     height: auto;
     position: relative;
     left: -75px;
+    transform: scale(0);
   }
 
   @media screen and (min-width: 576px) {}
@@ -571,6 +595,15 @@ div {
     border: none;
     transition: all 0.2s ease-out;
     text-transform: lowercase;
+    position: relative;
+  }
+
+  .ln-btn ion-icon {
+    font-size: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+    margin-top: -3px;
   }
 
   .ln-btn-block {
@@ -579,6 +612,7 @@ div {
   }
 
   .jl-btn-small {
+    line-height: 28px;
     height: 28px;
     padding: 0 20px;
     border-radius: 14px;
@@ -587,6 +621,7 @@ div {
 
   .ln-btn-medium {
     height: 38px;
+    line-height: 38px;
     padding: 0 27px;
     border-radius: 19px;
     font-size: 16px;
@@ -594,6 +629,7 @@ div {
 
   .ln-btn-large {
     height: 45px;
+    line-height: 45px;
     padding: 0 35px;
     border-radius: 23px;
     font-size: 16px;
@@ -786,8 +822,16 @@ div {
     animation: fadeOut 2s forwards ease-out;
   }
 
+  .ln-fade-from-left {
+    animation: fadeFromLeft 2s 0.7s forwards cubic-bezier(0,1.01,.32,1);
+  }
+
   .ln-scale-right {
     animation: scaleRight 0.7s 0.2s forwards cubic-bezier(0,1.01,.32,1);
+  }
+
+  .ln-scale-up {
+    animation: scaleUp 0.5s 0.5s forwards cubic-bezier(0,1.01,.32,1);
   }
 
   .red {
