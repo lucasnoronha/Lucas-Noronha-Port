@@ -108,6 +108,18 @@ var setActiveNav = function () {
   }
 };
 
+//Set Active Slide
+var setActiveSlide = function () {
+  for (var sld = 0; sld < sliderItem.length; sld++) {
+    let mySlideNum = parseInt(sliderItem[sld].getAttribute("data-slide"));
+
+    if (mySlideNum === currentCounter) {
+      sliderItem[sld].classList.add("ln-slide-active");
+      sliderItem[sld].querySelector('.ln-portfolio-item-box').classList.add('ln-scale-right');
+    }
+  }
+};
+
 var changeAvctive = function () {
   for (var rm = 0; rm < navItems.length; rm++) {
     navItems[rm].classList.remove("ln-item-active");
@@ -117,7 +129,12 @@ var changeAvctive = function () {
     });
   }
 
+  for (var rms = 0; rms < sliderItem.length; rms++) {
+    sliderItem[rms].classList.remove("ln-slide-active");
+  }
+
   setActiveNav();
+  setActiveSlide();
 };
 
 //ACTIONS
