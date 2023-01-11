@@ -466,7 +466,7 @@ div {
   }
 
   .ln-portfolio-item-info {
-    width: 100%;
+    width: calc(100% - 75px);
     display: table;
     margin-top: 55px;
   }

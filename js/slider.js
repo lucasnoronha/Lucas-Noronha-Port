@@ -47,6 +47,7 @@ var nextSlideAnim = function () {
   anime({
     targets: sliderList,
     translateX: slidePos,
+    easing: 'cubicBezier(0,1.01,.32,1)'
   });
 };
 
@@ -61,6 +62,7 @@ var prevSlideAnim = function () {
   anime({
     targets: sliderList,
     translateX: slidePos,
+    easing: 'cubicBezier(0,1.01,.32,1)'
   });
 };
 
